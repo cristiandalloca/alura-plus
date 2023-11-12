@@ -154,3 +154,46 @@ body {
     color: var(--secondary-color);
     font-size: 0.875rem;
 }
+
+@media (max-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .principal {
+        background-image: none;
+    }
+    
+    .secundario {
+        margin: 0 5em;
+    }
+
+    .invertido {
+        flex-direction: column-reverse;
+    }
+
+    .dispositivos {
+        padding: 1em;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+    }
+
+    .rodape {
+        padding: 1em;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .secundario {
+        margin: 0;
+    }
+}
